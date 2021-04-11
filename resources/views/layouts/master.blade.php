@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-
-    @include('view::components.common.meta')
-
-    @include('view::components.common.favicon')
-
-    <title>@yield('title') | {{ config('app.name', 'Hishab Kitab') }}</title>
-
-    <!-- vendor css -->
-    @stack('style')
-    <link href="{{ asset('/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/vendor/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
-
-    <!-- DashForge CSS -->
-    <link rel="stylesheet" href="{{ asset('/css/dashforge.css') }}">
-
-    <!--Theme CSS -->
-    @include('view::components.common.skin', ['skin' => 'cool'])
+	
+	@include('view::components.common.meta')
+	
+	@include('view::components.common.favicon')
+	
+	<title>@yield('title') | {{ config('app.name', 'Hishab Kitab') }}</title>
+	
+	<!-- vendor css -->
+	@stack('style')
+	<link href="{{ asset('/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+	<link href="{{ asset('/vendor/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+	
+	<!-- DashForge CSS -->
+	<link rel="stylesheet" href="{{ asset('/css/dashforge.css') }}">
+	
+	<!--Theme CSS -->
+	@include('view::components.common.skin', ['skin' => 'cool'])
 
 <!-- overwrite CSS -->
-    @stack('css')
+	@stack('css')
 </head>
 <body class="mn-ht-100v d-flex flex-column">
 
